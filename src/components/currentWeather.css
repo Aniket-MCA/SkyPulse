@@ -1,0 +1,337 @@
+.currentWeather {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mainWeatherIcon {
+    height: 220px;
+    width:100%;
+}
+
+
+.currentWeather h1 {
+    margin: 0 0;
+
+    font-size: 65px;
+
+    font-weight: 500;
+
+    color: #13213c;
+
+    padding-left:11%;
+    
+}
+
+
+.currentWeather h1 span {
+    font-size: 38px;
+
+    color: #30343a;
+
+    font-weight: 400;
+    
+}
+
+
+.currentDate {
+    font-size: 18px;
+
+    margin: 5% 0 0 0;
+
+    font-weight: 600;
+
+    padding-left:11%;
+}
+
+
+.currentDate span {
+    color: #30343a;
+
+    font-weight: 400;
+}
+
+
+.weatherStatus {
+    width: 100%;
+
+    margin-top: 25px;
+
+    border-top: 2px solid rgba(255, 255, 255, 0.3
+    );
+
+    padding-top: 15px;
+}
+
+
+.weatherStatus p {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 15px;
+
+    padding-left:11%;
+    
+}
+
+
+.weatherStatus img {
+    /* width: 30px; */
+    height: 40px;
+}
+
+
+.defaultWeather {
+    width: 100%;
+    min-height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.defaultWeather .searchimg {
+    width: 100%;
+    height:clamp(217px, 245px, 245px);
+
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .currentWeather {
+    margin: 8px 5px 5px 5px;
+    display: flex;
+    flex-direction:row;
+    border-radius:20px;
+    background:rgba(255, 255, 255, 0.2);
+
+    border:1px solid rgba(255, 255, 255, 0.6);
+    box-shadow:
+        20px 20px 20px rgba(0, 0, 0, 0.04);
+}
+
+.defaultWeather {
+    width: 0;
+    min-height: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.defaultWeather .searchimg {
+    width: 0;
+    height:0;
+
+    object-fit: cover;
+    display: block;
+}
+
+.mainWeatherIcon {
+    height: 120px;
+    width: 70%;
+}
+
+
+.currentWeather h1 {
+    margin: 0 0;
+
+    font-size: 35px;
+
+    font-weight: 500;
+
+    color: #13213c;
+
+    padding-left:11%;
+    width: 100%;
+}
+
+
+.currentWeather h1 span {
+    font-size: 25px;
+
+    color: #30343a;
+
+    font-weight: 400;
+}
+
+
+.currentDate {
+    font-size: 14px;
+
+    margin: 5% 0 0 0;
+
+    font-weight: 600;
+
+    padding-left:11%;
+    width: 100%;
+}
+
+
+.currentDate span {
+    color: #30343a;
+    font-weight: 400;
+}
+
+
+.weatherStatus {
+    width: 100%;
+
+    margin-top: 15px;
+
+    border-top: none;
+    padding-left:8%; 
+
+    padding-top: 0px;
+    
+}
+
+
+.weatherStatus p {
+    display: flex;
+    align-items: center;
+    margin:0;
+    gap: 3px;
+    padding-left:0%; 
+    font-size: 14px;
+}
+
+
+.weatherStatus img {
+    height: 28px;
+    padding-left:0%;
+}
+
+.section1{
+    width:50%;
+}
+.section2{
+    width:50%;
+    padding: 5px 5px 5px 0;
+}
+/* .side_bar_img{
+   justify-content:flex-end;
+} */
+
+}
+
+@media (min-width: 601px) and (max-width: 850px) {
+
+.currentWeather {
+    margin: 8px 5px 5px 5px;
+    display: flex;
+    flex-direction:row;
+    border-radius:20px;
+    background:rgba(255, 255, 255, 0.2);
+
+    border:1px solid rgba(255, 255, 255, 0.6);
+    box-shadow:
+        0px 2px 20px rgba(0, 0, 0, 0.04);
+}
+
+.defaultWeather {
+    width: 0;
+    min-height: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.defaultWeather .searchimg {
+    width: 0;
+    height:0;
+
+    object-fit: cover;
+    display: block;
+}
+.mainWeatherIcon {
+    height: 120px;
+    width: 100%;
+}
+
+
+.currentWeather h1 {
+    margin: 0 0;
+
+    font-size: 35px;
+
+    font-weight: 500;
+
+    color: #13213c;
+    padding-left:0;
+    width: 100%;
+}
+
+
+.currentWeather h1 span {
+    font-size: 25px;
+
+    color: #30343a;
+
+    font-weight: 400;
+}
+
+
+.currentDate {
+    font-size: 14px;
+
+    margin: 5% 0 0 0;
+
+    font-weight: 600;
+
+    padding-left:0;
+    width: 100%;
+}
+
+
+.currentDate span {
+    color: #30343a;
+    font-weight: 400;
+}
+
+
+.weatherStatus {
+    width: 100%;
+
+    margin-top: 15px;
+
+    border-top: none;
+    padding-left:0%; 
+    
+    padding-top: 0px;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+
+.weatherStatus p {
+    
+    margin:0;
+    gap: 15px;
+    padding-left:0%; 
+    padding-right:15px;
+    font-size: 14px;
+}
+
+
+.weatherStatus img {
+    height: 28px;
+    padding-left:0%;
+}
+
+.section1{
+    width:50%;
+    text-align:center;
+}
+.section2{
+    width:50%;
+    padding: 5px 5px 5px 0;
+}
+}

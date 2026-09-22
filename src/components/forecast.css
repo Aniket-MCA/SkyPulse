@@ -1,0 +1,223 @@
+.forecastSection {
+    width: 100%;
+    border-radius:20px 20px 0 0 ;
+}
+
+.forecastHeader {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+
+
+.forecastTabs {
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+.forecastTabs button {
+    border: none;
+    background: transparent;
+
+    font-size: 22px;
+    font-family: inherit;
+
+    color: #30343a;
+
+    padding: 8px 0;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+   
+}
+
+
+.forecastTabs button:hover {
+    background: linear-gradient(
+        180deg,
+        #1A62AF,
+        #217DCC,
+        #31ACE8
+    );
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+        
+}
+
+
+.forecastTabs .activeTab {
+     background: linear-gradient(
+        180deg,
+        #1A62AF,
+        #217DCC,
+        #31ACE8
+    );
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-weight: 600;
+
+    border-bottom: 3px solid #217DCC;
+}
+
+
+
+.unitButtons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.unitButtons button {
+    width: 58px;
+    height: 58px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:transparent;
+
+    border:1px solid rgba(255, 255, 255, 0.4);
+
+    color: #1f2937;
+
+    font-size: 18px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.unitButtons button:hover {
+    transform: translateY(-2px);
+}
+
+
+.unitButtons .activeUnit {
+    /* background: rgba(30, 101, 233, 0.86); */
+    background: linear-gradient(
+        180deg,
+        #1A62AF,
+        #217DCC,
+        #31ACE8
+    );
+    border:1px solid #31ACE8;
+    box-shadow:0 0 0 3px rgba(78, 156, 234, 0.268);
+    -webkit-tap-highlight-color:transparent;
+    outline:none;
+    color: white;
+}
+
+.unitButtons .activeUnit:focus-visible{outline:none;}
+
+
+
+@media (max-width: 600px) {
+
+    .forecastHeader {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+
+.forecastTabs {
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+}
+
+
+.forecastTabs button {
+    border: none;
+    background: transparent;
+
+    font-size: 17px;
+    font-family: inherit;
+
+    color: #30343a;
+
+    padding: 8px 0;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.forecastTabs button:hover {
+    color: #1677e8;
+}
+
+
+.forecastTabs .activeTab {
+    color: #1677e8;
+
+    font-weight: 600;
+
+    border-bottom: 3px solid #1677e8;
+}
+
+
+.unitButtons {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.unitButtons button {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    background:transparent;
+
+    border:1px solid rgba(255, 255, 255, 0.4);
+
+    color: #1f2937;
+
+    font-size: 15px;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.unitButtons button:hover {
+    transform: none;
+}
+}
+
+@media (min-width: 601px) and (max-width: 850px) {
+.unitButtons button:hover {
+    transform: none;
+}
+
+}

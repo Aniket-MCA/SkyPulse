@@ -1,0 +1,428 @@
+.highlightsSection {
+    margin-top: 35px;
+}
+
+
+.highlightsSection > h2 {
+    font-size: 23px;
+
+    margin-bottom: 25px;
+}
+
+
+.highlightGrid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+.highlightCard {
+    width: 100%;
+    min-width: 0;
+    height:15.5rem;
+    box-sizing: border-box;
+
+    padding: clamp(16px, 2vw, 28px);
+
+    background: rgba(255, 255, 255, 0.3);
+
+    border:1px solid rgba(255, 255, 255, 0.6);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+
+.highlightCard h3 {
+    margin: 0 0 25px;
+
+    color: #30343a;
+
+    font-size: clamp(10px, 3vw, 18px);
+
+    font-weight: 500;
+}
+
+
+.bigValue {
+    font-size:clamp(40px, 5vw , 60px);
+
+    font-weight: 600;
+
+    color: #14213d;
+}
+
+
+.bigValue span {
+    font-size:clamp(20px, 2vw , 25px);
+
+    font-weight: 400;
+
+    color: #30343a;
+}
+
+.locationText span{
+    font-size: 16px;
+}
+
+.statusText {
+    color: #30343a;
+
+    margin-top: 25px;
+}
+
+
+.statusText strong {
+    color: #287cf0;
+}
+
+
+.locationText {
+    margin-top: clamp(15px, 2vw, 35px);
+
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+
+    font-size: 14px;
+}
+
+.uvGauge {
+    width: min(100%, 260px);
+    aspect-ratio: 2 / 1;
+    margin: 20px auto 0;
+    position:relative;
+}
+
+
+.uvSvg {
+    overflow: visible;
+
+    width: 100%;
+    height: 120px;
+    
+}
+
+
+.uvBackground {
+    fill: none;
+    stroke: #fff0cf;
+    stroke-width: 25;
+    stroke-linecap: round;
+}
+
+
+.uvProgress {
+    fill: none;
+    stroke: #FFB51B;
+    stroke-width: 25;
+    stroke-linecap: round;
+
+    transition: stroke-dasharray 0.6s ease;
+}
+
+
+/* Numbers */
+
+.uvScale {
+    fill: #7a8499;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+
+/* Big UV number */
+
+.uvNumber {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translateX(-50%);
+
+    color: #f6a313;
+
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(40px, 3vw, 52px);
+    font-weight: 600;
+}
+
+
+
+/* Sunrise */
+
+.sunriseCard {
+    display: flex;
+    /* justify-content:space-evenly; */
+    flex-direction: column;
+}
+
+
+.sunRow {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+
+.sunCircle {
+    width: clamp(50px, 4vw, 60px);
+    height: clamp(50px, 4vw, 60px);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #ffb51b;
+
+    color: white;
+
+    font-size: 22px;
+}
+
+
+.sunRow strong {
+    font-size: clamp(20px, 2vw, 20px);
+}
+
+
+.sunRow p {
+    margin: 3px 0 0;
+
+    font-size: clamp(7px, 5vh, 15px);
+
+    color: #30343a;
+}
+
+.status.good {
+    color: blue;
+}
+
+.status.average,
+.status.moderate , .status.Unhealthy.for.Sensitive.Groups{
+    color: #F59E0B;
+}
+
+.status.high, .status.unhealthy{
+    color: #F97316;
+}
+
+.status.poor , .status.very.unhealthy{
+    color: #EF4444;
+}
+
+@media (max-width: 600px) {
+
+    .highlightsSection {
+    margin-top: 15px;
+}
+
+    .highlightsSection > h2 {
+    font-size: 24px;
+    margin-top:15px;    
+    margin-bottom: 20px;
+}
+
+.highlightCard {
+    width: 100%;
+    min-width: 0;
+    height:100%;
+    box-sizing: border-box;
+
+    padding: clamp(16px, 2vw, 28px);
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    background: rgba(255, 255, 255, 0.3);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+.highlightCard h3 {
+    margin: 0 0 18px;
+
+    color: #30343a;
+
+    font-size: 16px;
+
+    font-weight: 500;
+}
+
+    .highlightGrid {
+    display: grid;
+
+    grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.bigValue {
+    font-size:clamp(25px, 5vw , 60px);
+
+    font-weight: 600;
+
+    color: #14213d;
+}
+.bigValue span {
+    font-size:10px;
+
+    font-weight: 400;
+
+    color: #30343a;
+}
+
+
+.bigValue span {
+     font-size:clamp(20px, 2vw , 25px);
+
+    font-weight: 400;
+
+    color: #30343a;
+}
+
+.uvGauge {
+    width: min(100%, 260px);
+    aspect-ratio: 0;
+
+    margin: -20px auto 0;
+    position:relative;
+}
+
+
+.uvSvg {
+    overflow: visible;
+
+    width: 100%;
+    height: 100px;
+    
+}
+
+
+/* Light background semicircle */
+
+.uvBackground {
+    fill: none;
+    stroke: #fff0cf;
+    stroke-width: 25;
+    stroke-linecap: round;
+}
+
+
+/* Orange progress */
+
+.uvProgress {
+    fill: none;
+    stroke: #FFB51B;
+    stroke-width: 25;
+    stroke-linecap: round;
+
+    transition: stroke-dasharray 0.6s ease;
+}
+
+
+/* Numbers */
+
+.uvScale {
+    fill: #7a8499;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    
+}
+
+
+/* Big UV number */
+
+.uvNumber {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translateX(-50%);
+
+    color: #f6a313;
+
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(25px, 7vw, 40px);
+    font-weight: 600;
+}
+
+
+
+/* Sunrise */
+
+.sunriseCard {
+    display: flex;
+    /* justify-content:space-evenly; */
+    flex-direction: column;
+}
+
+
+.sunRow {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.sunCircle {
+    width: clamp(25px, 4vw, 60px);
+    height: clamp(25px, 4vw, 60px);
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #ffb51b;
+
+    color: white;
+
+    font-size: 19px;
+}
+
+
+.sunRow strong {
+    font-size: clamp(17px, 2vw, 20px);
+}
+
+
+.sunRow p {
+    margin: 3px 0 0;
+
+    font-size: clamp(7px, 5vh, 15px);
+
+    color: #30343a;
+}
+}

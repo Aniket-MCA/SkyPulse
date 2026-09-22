@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    /* background: white; */
+    color: #172033;
+}
+
+
+#root {
+    min-height: 100vh;
+}
+
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    gap: 6px;
+    padding: 16px;
+    background:url("./assets/demo-images/default_bg1.png");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+.sidebar {
+    width: 320px;
+    min-width: 320px;
+    min-height: calc(100vh - 32px);
+    /* background: #FBFCFD; */
+    background:rgba(255, 255, 255, 0.2);
+
+    border:1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 24px;
+    background-size:350px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.dashboard {
+    flex: 1;
+    min-width: 0;
+    min-height: calc(100vh - 32px);
+
+    background:rgba(255, 255, 255, 0.2);
+
+    border:1px solid rgba(255, 255, 255, 0.6);
+
+    border-radius: 24px;
+
+    padding: 32px;
+
+    overflow: hidden;
+   
+}
+
+
+.message {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    gap:30px;
+
+    height: 100%;
+
+    font-size: 18px;
+    color: #687386;
+    
+}
+
+.loading_spin{
+    width:60px;
+    height:60px;
+    border:6px solid transparent;
+    border-top-color:#1fbfd7;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+@keyframes spin{ to {transform:rotate(360deg); } }
+
+.errorMessage {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 300px;
+
+    font-size: 18px;
+
+    color: #e74c3c;
+
+    text-align: center;
+}
+
+
+.welcomeMessage {
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.welcomeMessage h1 {
+    margin: 0 0 10px;
+
+    font-size: 32px;
+
+    font-weight: 600;
+}
+
+
+.welcomeMessage p {
+    margin: 0;
+
+    font-size: 16px;
+
+    color: #7b8494;
+}
+.searchimg{
+        height:0;    
+    }
+
+
+@media (max-width: 1100px) {
+
+    .app {
+        gap: 12px;
+        padding: 12px;
+    }
+
+
+    .sidebar {
+        width: 280px;
+        min-width: 280px;
+    }
+
+
+    .dashboard {
+        padding: 24px;
+    }
+}
+
+
+@media (max-width: 850px) {
+
+    .app {
+        flex-direction: column;
+        padding: 10px;
+        gap: 0;
+    }
+
+
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+        min-height: auto;
+        background:none;
+        border-radius: 20px 20px 0 0;
+        background:rgba(255, 255, 255, 0.2);
+
+        border:1px solid rgba(255, 255, 255, 0.6);
+        border-bottom:0;
+        padding:14px;
+    }
+
+    .searchimg{
+        height:250px;
+    }
+
+    .welcomeMessage {
+        height: 100%;
+        min-height: 400px;
+    }
+    .dashboard {
+        width: 100%;
+        min-height: auto;
+
+        padding: 20px;
+        
+        border-radius: 0 0 20px 20px;
+        background:rgba(255, 255, 255, 0.2);
+
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-top:0;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .app {
+    min-height: 100vh;
+    display: flex;
+    gap: 0;
+    padding: 10px;
+}
+
+
+    .sidebar {
+        width: 100%;
+        min-width: 0;
+        min-height: auto;
+        border-radius: 20px 20px 0 0;
+        background:rgba(255, 255, 255, 0.2);
+
+        border:1px solid rgba(255, 255, 255, 0.6);
+        border-bottom:0;
+    }
+
+
+    .dashboard {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+
+    border-radius: 0 0 20px 20px;
+
+    padding: 14px;
+
+    overflow: hidden;
+    
+    }
+
+    .message {
+    min-height: 300px;
+    height:0; 
+}
+
+    .welcomeMessage {
+        height: 100%;
+        min-height: 400px;
+    }
+
+
+    .welcomeMessage h1 {
+        font-size: 25px;
+    }
+
+
+    .welcomeMessage p {
+        font-size: 14px;
+    }
+
+
+    .message,
+    .errorMessage {
+        min-height: 250px;
+
+        font-size: 16px;
+    }
+}

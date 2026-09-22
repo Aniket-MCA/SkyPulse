@@ -1,0 +1,90 @@
+.hourlyCard {
+    min-width: 140px;
+
+    height: 170px;
+
+    flex-shrink: 0;
+
+    padding: 15px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    background: rgba(255, 255, 255, 0.3);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+
+.hourTime {
+    margin: 0;
+
+    color: #30343a;
+    /* color:black; */
+
+    font-size: 14px;
+}
+
+
+.hourlyIcon {
+    width: 50px;
+    height: 50px;
+}
+
+
+.hourlyCard h3 {
+    margin: 0;
+
+    font-size: 20px;
+}
+
+
+.rainChance {
+    margin: 0;
+
+    font-size: 12px;
+
+    color: #3285e9;
+}
+
+
+
+@media (max-width: 600px) {
+   .hourlyCard {
+    min-width: 100px;
+
+    height: 170px;
+
+    flex-shrink: 0;
+
+    padding: 15px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    background: rgba(255, 255, 255, 0.3);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.04);
+}
+ 
+}
