@@ -1,11 +1,11 @@
 
 @font-face{
     font-family: pappins;
-    src: url("./assets/fonts/Poppins-SemiBold.ttf");
+    src: url("../assets/fonts/Poppins-SemiBold.ttf");
 }
 @font-face{
     font-family: pappinsLight;
-    src: url("./assets/fonts/Poppins-ExtraLight.ttf");
+    src: url("../assets/fonts/Poppins-ExtraLight.ttf");
 }
 
 
