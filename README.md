@@ -198,7 +198,7 @@ Make sure `.env` is included in `.gitignore`.
 https://skypulse-weather-info.netlify.app/
 
 **Source Code:**
-https://github.com/YOUR_USERNAME/SkyPulse
+https://github.com/Aniket-MCA/SkyPulse
 
 ---
 
