@@ -43,7 +43,7 @@
 ### Responsive Mobile View
 
 <p align="center">
-  <img src="./screenshots/mobile.png" width="350" height="500">
+  <img src="./screenshots/mobile.png" width="250" height="500">
 </p>
 
 ---
