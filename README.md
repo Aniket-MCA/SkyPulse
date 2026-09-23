@@ -28,7 +28,9 @@
 
 ### Current Weather
 
-![Current Weather](./screenshots/CurrentWeather.png)
+<p align="center">
+ <img src="./screenshots/CurrentWeather.png" width="350">
+</p>
 
 ### Forecast
 
@@ -40,7 +42,9 @@
 
 ### Responsive Mobile View
 
-![Mobile View](./screenshots/mobile.png)
+<p align="center">
+  <img src="./screenshots/mobile.png" width="350">
+</p>
 
 ---
 
