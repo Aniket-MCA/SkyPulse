@@ -29,7 +29,7 @@
 ### Current Weather
 
 <p align="center">
- <img src="./screenshots/CurrentWeather.png" width="350" height="500">
+ <img src="./screenshots/CurrentWeather.png" width="250" height="500">
 </p>
 
 ### Forecast
