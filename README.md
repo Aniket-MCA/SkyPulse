@@ -26,12 +26,6 @@
 
 ![Current Weather](./screenshots/home.png)
 
-### Current Weather
-
-<p align="center">
- <img src="./screenshots/CurrentWeather.png" width="200" height="500">
-</p>
-
 ### Forecast
 
 ![Weather Forecast](./screenshots/forcast.png)
